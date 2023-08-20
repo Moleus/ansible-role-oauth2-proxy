@@ -9,6 +9,8 @@ StandardError=journal
 SyslogIdentifier={{ oauth2_identifier }}
 User={{ oauth2_user }}
 Group={{ oauth2_user }}
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
 
 [Install]
 WantedBy=multi-user.target

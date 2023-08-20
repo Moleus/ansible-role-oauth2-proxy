@@ -4,8 +4,8 @@
 WorkingDirectory={{ oauth2_dir }}
 ExecStart={{ oauth2_dir }}/current/{{ oauth2_filename }} {{ oauth2_config_param_prefix }}config={{ oauth2_config_path }} {{ oauth2_config_cmdline_args }}
 Restart=always
-StandardOutput=syslog
-StandardError=syslog
+StandardOutput=journal
+StandardError=journal
 SyslogIdentifier={{ oauth2_identifier }}
 User={{ oauth2_user }}
 Group={{ oauth2_user }}
